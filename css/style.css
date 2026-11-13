@@ -1,0 +1,649 @@
+ /* TaskFlow*/
+ /*Home page*/
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAF5E9;
+    color: #26382C;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #365B43;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #365B43;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7BAE87;
+}
+
+.signup-btn {
+    background-color: #7BAE87;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 90px 8%;
+    min-height: 480px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.small-title {
+    color: #7BAE87;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #26382C;
+}
+
+.hero h1 span {
+    color: #6A9D77;
+}
+
+.hero-content > p:not(.small-title) {
+    max-width: 500px;
+    margin-bottom: 25px;
+    color: #647467;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: #6A9D77;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #365B43;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+}
+
+/* Features Section */
+.features {
+    background-color: white;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2,
+.how-it-works h2,
+.tasks-section h2 {
+    color: #365B43;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #718174;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #F3F9F2;
+    border: 1px solid #D5E5D6;
+    border-radius: 14px;
+    padding: 30px 20px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(54, 91, 67, 0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(54, 91, 67, 0.15);
+}
+
+.feature-card h3 {
+    color: #4F805B;
+    margin-bottom: 12px;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.how-it-works ol {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.how-it-works li {
+    padding: 8px;
+}
+
+/* Tasks Table */
+.tasks-section {
+    background-color: white;
+    padding: 65px 8%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #D5E5D6;
+    box-shadow: 0 5px 15px rgba(54, 91, 67, 0.08);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #D5E5D6;
+    text-align: center;
+}
+
+th {
+    background-color: #7BAE87;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F3F9F2;
+}
+
+/* Footer */
+footer {
+    background-color: #365B43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #D8EED9;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* ==============================
+   ABOUT US PAGE
+   ============================== */
+
+/* About Hero */
+.about-hero {
+    background-color: #DCEEDD;
+    text-align: center;
+    padding: 75px 8%;
+}
+
+.about-hero h1 {
+    color: #365B43;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    color: #647467;
+    font-size: 18px;
+    max-width: 1100px;
+    margin: auto;
+    white-space: nowrap;
+}
+
+/* About Image */
+.about-image {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(54, 91, 67, 0.12);
+}
+
+/* Who We Are */
+.about-content {
+    padding: 60px 12%;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: #365B43;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    max-width: 800px;
+    margin: auto;
+    color: #647467;
+    line-height: 1.9;
+}
+
+/* Mission and Vision */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 8%;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    background-color: white;
+    border: 1px solid #D5E5D6;
+    border-radius: 14px;
+    padding: 35px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(54, 91, 67, 0.08);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h2 {
+    color: #6A9D77;
+    margin-bottom: 15px;
+}
+
+/* Why Choose TaskFlow */
+.why-choose {
+    background-color: #EAF5E9;
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.why-choose h2 {
+    color: #365B43;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* Two columns, two cards in each column */
+.why-choose .benefits-container {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.why-choose .benefit-card {
+    background-color: white;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 1px solid #D5E5D6;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(54, 91, 67, 0.08);
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(54, 91, 67, 0.14);
+}
+
+.benefit-icon {
+    display: inline-block;
+    color: #6A9D77;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.benefit-card h3 {
+    color: #365B43;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #647467;
+    line-height: 1.7;
+}
+
+/* How TaskFlow Helps Teams */
+.how-taskflow-helps {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.how-taskflow-helps h2 {
+    color: #365B43;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.help-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.help-card {
+    background-color: white;
+    border: 1px solid #D5E5D6;
+    border-radius: 14px;
+    padding: 30px 25px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(54, 91, 67, 0.08);
+    transition: 0.3s;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+}
+
+.help-card h3 {
+    color: #6A9D77;
+    margin-bottom: 15px;
+}
+
+.help-card p {
+    color: #647467;
+    line-height: 1.7;
+}
+
+/* About Call To Action */
+.about-cta {
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.about-cta h2 {
+    color: #365B43;
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    color: #647467;
+    margin-bottom: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-hero p {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose .benefits-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project Tip Section */
+.project-tip {
+    background-color: #EAF5E9;
+    text-align: center;
+    padding: 55px 8%;
+    margin: 35px auto;
+}
+
+.project-tip h2 {
+    color: #365B43;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project-tip p {
+    color: #647467;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.project-tip .primary-btn {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+/* Dynamic Project Tasks */
+.dynamic-tasks {
+    background-color: #EAF5E9;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.dynamic-tasks h2 {
+    color: #365B43;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.dynamic-tasks p {
+    color: #647467;
+    margin-bottom: 25px;
+}
+
+#dynamic-task-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+#dynamic-task-list li {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #D5E5D6;
+    border-radius: 12px;
+    color: #365B43;
+    box-shadow: 0 4px 12px rgba(54, 91, 67, 0.08);
+}
+
+/* Center the fifth task */
+#dynamic-task-list li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+}
+
+@media (max-width: 600px) {
+    #dynamic-task-list {
+        grid-template-columns: 1fr;
+    }
+}
+#task-count {
+    color: #365B43;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+/* Change Illustration Button */
+.hero-image #change-picture {
+    background-color: #6A9D77 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(54, 91, 67, 0.12);
+}
+
+.hero-image #change-picture:hover {
+    background-color: #365B43 !important;
+}
+
+/* Quick Navigation Links */
+.quick-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 25px 20px;
+    background-color: #EAF5E9;
+}
+
+.quick-links a {
+    display: inline-block;
+    color: #365B43;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 1px solid #D5E5D6;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(54, 91, 67, 0.08);
+    transition: 0.3s ease;
+}
+
+.quick-links a:hover {
+    background-color: #6A9D77;
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .quick-links {
+        flex-direction: column;
+    }
+
+    .quick-links a {
+        width: 80%;
+        text-align: center;
+    }
+}
+/* Completed Task Style */
+.completed {
+    background-color: #DCEEDD !important;
+    color: #365B43;
+    text-decoration: line-through;
+    opacity: 0.7;
+    cursor: pointer;
+}

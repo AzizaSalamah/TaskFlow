@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Team Project Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">TaskFlow</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="small-title">TEAMWORK MADE SIMPLE</p>
+
+                <h1>
+                    Manage Your Team.
+                    <span>Achieve More.</span>
+                </h1>
+
+                <p>
+                    TaskFlow helps teams organize projects,
+                    manage tasks, and track progress
+                    all in one place.
+                </p>
+
+                <a href="signup.html" class="primary-btn">
+                    Get Started
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img id="hero-picture" src="images/taskflow.png" alt="TaskFlow project management illustration"
+                    usemap="#taskflow-map">
+
+                <map name="taskflow-map">
+                    <area shape="default" href="about.html" alt="Learn about TaskFlow">
+                </map>
+                <button id="change-picture" class="primary-btn">
+                    Change Illustration
+                </button>
+            </div>
+
+        </section>
+
+        <div class="quick-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#tasks">Project Tasks</a>
+        </div>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+
+            <h2>Everything Your Team Needs</h2>
+
+            <p class="section-description">
+                Simple tools to make teamwork more organized.
+            </p>
+
+            <div class="feature-container">
+
+                <article class="feature-card">
+                    <h3>Task Management</h3>
+                    <p>Organize tasks and manage daily activities easily.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Team Collaboration</h3>
+                    <p>Help team members work together efficiently.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor project progress and track completion.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="how-it-works">
+
+            <h2>How TaskFlow Works</h2>
+
+            <ol>
+                <li>Create your project.</li>
+                <li>Assign tasks to team members.</li>
+                <li>Track progress and achieve your goals.</li>
+            </ol>
+
+        </section>
+        <!-- Project Tip Section -->
+        <section class="project-tip">
+            <h2>TaskFlow Tip of the Day</h2>
+
+            <p id="tip-text">
+                Start by organizing your tasks and setting priorities.
+            </p>
+
+            <button id="tip-button" class="primary-btn">
+                Show Another Tip
+            </button>
+        </section>
+
+        <!-- Example Tasks Table -->
+        <section class="tasks-section" id="tasks">
+
+            <h2>Example Project Tasks</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Assigned To</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Design Website</td>
+                        <td>Team Member 1</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Develop Homepage</td>
+                        <td>Team Member 2</td>
+                        <td>In Progress</td>
+                    </tr>
+
+                    <tr>
+                        <td>Test Website</td>
+                        <td>Team Member 3</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <!-- Dynamic Project Tasks -->
+        <section class="dynamic-tasks">
+
+            <h2>Project Tasks Overview</h2>
+
+            <p>Here are some tasks your team can work on:</p>
+
+            <ul id="dynamic-task-list"></ul>
+            <p id="task-count"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TaskFlow. All Rights Reserved.</p>
+        <a href="about.html">Learn More About Us</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Embedded JavaScript
+        console.log("Welcome to TaskFlow!");
+    </script>
+
+</body>
+
+</html>
