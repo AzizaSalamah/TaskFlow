@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | TaskFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        h1 {
+            color: #365B43;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">TaskFlow</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="auth-section">
+
+    <section class="auth-intro">
+
+        <button onclick="welcomeUser()" class="welcome-btn">
+            Welcome
+        </button>
+
+        <h1>Join TaskFlow!</h1>
+
+        <p>
+            Start organizing your tasks and
+            make teamwork easier and smarter.
+        </p>
+
+        <!-- Click the image to visit About Us -->
+        <div class="auth-image">
+            <img src="images/taskflow.png"
+                 alt="TaskFlow Project Management Illustration"
+                 usemap="#taskflowMap">
+
+            <map name="taskflowMap">
+                <area shape="rect"
+                      coords="0,0,1536,1024"
+                      href="about.html"
+                      alt="Learn more about TaskFlow">
+            </map>
+        </div>
+
+    </section>
+
+    <section class="auth-card">
+
+        <h2>Create Your Account</h2>
+        <p>Fill in your information to get started.</p>
+
+        <form id="signupForm">
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName"
+                   placeholder="Your full name" required>
+
+            <label for="signupEmail">Email Address</label>
+            <input type="email" id="signupEmail"
+                   placeholder="Your email" required>
+
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword"
+                   placeholder="Create a password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm your password" required>
+
+            <label>
+                <input type="checkbox" id="terms">
+                I agree to the Terms and Conditions
+            </label>
+
+            <p id="signupMessage" class="auth-message"></p>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 TaskFlow. All Rights Reserved.</p>
+    <a href="about.html">Learn More About Us</a>
+</footer>
+
+<script>
+    function welcomeUser() {
+        alert("Welcome to TaskFlow!");
+    }
+</script>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
